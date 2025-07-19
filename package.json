@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11"
+  },
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o src/style.css",
+    "watch": "tailwindcss -i src/input.css -o src/style.css --watch"
+  },
+  "name": "tailwindplayground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^4.1.11"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
