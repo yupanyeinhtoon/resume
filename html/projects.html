@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="../src/style.css" rel="stylesheet" />
+  <title>Yupa Htoon</title>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-200">
+  <main class="flex-grow">
+    <section id="index" class="min-h-screen">
+      <nav class="relative container  p-6">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-20">
+            <a href="#index" class="text-2xl font-bold text-gray-600 hover:text-yellow-700">Yupa Htoon</a>
+          </div>
+          <div class="hidden lg:flex items-center space-x-1">
+            <a href="#resume" class="text-gray-600 hover:text-yellow-700 after:content-['|'] after:ml-1">Resume</a>
+            <a href="#" class="text-gray-600 hover:text-yellow-700 after:content-['|'] after:ml-1">Projects</a>
+            <a href="#" class="text-gray-600 hover:text-yellow-700">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="flex flex-col lg:flex-row mx-auto justify-between items-center  space-y-10 lg:space-y-0 lg:space-x-10 ">
+        <div class="mx-auto">
+          <div class="flex flex-col lg:flex-row items-center justify-center">
+            <div class="w-80 h-80 relative rounded-full overflow-hidden">
+              <img src="../img/yupa-htoon.jpg" alt="Yupa Htoon"
+                class="max-w-[480px] max-h-[480px] rounded-full object-cover" />
+            </div>
+            <div class="flex flex-col justify-center items-start pl-10">
+              <p class="max-w-md text-gray-700 text-lg text-left mt-10">
+                I am a highly skilled IT professional with over a decade of experience in analyzing, designing, and
+                implementing efficient IT systems. I’ve proficiency in
+                various programing languages,databases, tools and AWS cloud technology. Learning never stops for me and
+                I’m always ready to learn emerging technologies.
+              </p>
+              <div
+                class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 mt-4 items-center justify-center w-full">
+                <a href="#resume"
+                  class="w-32 h-32 bg-yellow-600 hover:bg-yellow-700 text-white rounded-full flex items-center justify-center border border-black text-center">
+                  Resume
+                </a>
+                <button
+                  class="w-32 h-32 bg-[#16507a] hover:bg-[#08417B] text-white rounded-full flex items-center justify-center border-1 border-black">
+                  Projects
+                </button>
+                <button
+                  class="w-32 h-32 bg-gray-600 hover:bg-gray-700 text-white rounded-full flex items-center justify-center border-1 border-black">
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="min-h-screen pt-10 mt-20">
+      <div class="flex flex-col space-y-6 px-4">
+        <!-- Experience Item -->
+        <div class="border border-gray-400 rounded-md  p-6 shadow-sm">
+          <div class="flex flex-col md:flex-row md:space-x-8">
+            <!-- Date (left column) -->
+            <div class="md:w-1/4 text-gray-600 font-medium mb-4 md:mb-0 md:text-center">
+              Jul 2023 - Aug 2024
+            </div>
+
+            <!-- Experience Description (right column) -->
+            <div class="md:w-3/4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 break-words">
+                Senior Solution Designer at Singapore Telecommunications Limited
+              </h3>
+              <ul class="list-disc list-inside text-gray-700 space-y-1 break-words">
+                <li>Lead a team of developers to build a Java application that automates billing configurations.
+                </li>
+                <li>Oversee tech refresh and system migration processes.</li>
+                <li>Create Java programs and PL/SQL scripts to generate Excel reports for configuration issues.
+                </li>
+                <li>Manage delivery partners and ensure timely CAPEX project execution.</li>
+                <li>Guide offshore teams and junior developers with Business-As-Usual (BAU) change requests.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row md:space-x-8 mt-6">
+            <!-- Date (left column) -->
+            <div class="md:w-1/4 text-gray-600 font-medium mb-4 md:mb-0 md:text-center">
+              Mar 2021 - Jun 2023
+            </div>
+
+            <!-- Experience Description (right column) -->
+            <div class="md:w-3/4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 break-words">
+                Solution Designer at Singapore Telecommunications Limited
+              </h3>
+              <ul class="list-disc list-inside text-gray-700 space-y-1 break-words">
+                <li>
+                  Developed and maintained Java applications and database scripts to accomodate the configuration of
+                  devices.
+                </li>
+                <li>Oversee tech refresh and system migration processes.</li>
+                <li>Create Java programs and PL/SQL scripts to generate Excel reports for configuration issues.
+                </li>
+                <li>Manage delivery partners and ensure timely CAPEX project execution.</li>
+                <li>Guide offshore teams and junior developers with Business-As-Usual (BAU) change requests.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <a href="#index"
+    class="fixed bottom-6 right-6 bg-[#08417B] hover:bg-[#08417B] text-white p-3 rounded-full shadow-lg z-50 transition-all duration-300 flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </a>
+
+  <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm">&copy; 2025 Yupa Htoon. All rights reserved.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-yellow-500 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-yellow-500 transition">Terms of Service</a>
+        <a href="#" class="hover:text-yellow-500 transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
