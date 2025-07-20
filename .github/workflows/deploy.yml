@@ -27,6 +27,12 @@ jobs:
 
       - name: Copy CSS to html folder
         run: cp ./src/style.css ./html/style.css
+      
+      - name: Copy images to img folder
+        run: cp -r ./img ./html/img
+      
+      - name: Copy scripts to script folder
+        run: cp -r ./scripts ./html/scripts
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
