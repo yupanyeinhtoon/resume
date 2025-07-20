@@ -25,23 +25,20 @@ jobs:
       - name: Build Tailwind CSS
         run: npm run build
 
-      - name: Copy CSS to src folder
-        run: cp ./src/style.css ./dist/src/style.css
+      - name: Copy CSS to html folder
+        run: cp ./src/style.css ./html/src/style.css
       
-      - name: Copy images to img folder
-        run: cp -r ./img ./dist/img
+      - name: Copy images to html folder
+        run: cp -r ./img ./html/img
 
-      - name: Copy scripts to scripts folder
-        run: cp -r ./scripts ./dist/scripts
-      
-      - name: Copy html pages to html folder
-        run: cp -r ./html ./dist/html
+      - name: Copy scripts to html folder
+        run: cp -r ./scripts ./html/scripts
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./html
 
       - name: Print GitHub Pages URL
         run: echo "Your site is live at https://yupanyeinhtoon.github.io/resume/"
