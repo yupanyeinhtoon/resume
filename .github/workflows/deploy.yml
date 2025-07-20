@@ -30,5 +30,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist # Change if your build folder is different
+      
       - name: Print GitHub Pages URL
-        run: echo "Your site is live at: https://yupanyeinhtoon.github.io/resume/"
+        run: echo "Your site is live at https://yupanyeinhtoon.github.io/resume/"
