@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="../src/style.css" rel="stylesheet" />
+  <title>Yupa Htoon</title>
+</head>
+
+<body class="flex flex-col min-h-screen ">
+  <main class="flex-grow">
+    <section id="index" class="min-h-screen bg-gray-200">
+      <nav class="relative container  p-6">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-20">
+            <a href="#index" class="text-2xl font-bold text-gray-600 hover:text-yellow-700">Yupa Htoon</a>
+          </div>
+          <div class="hidden lg:flex items-center space-x-1">
+            <a href="#resume" class="text-gray-600 hover:text-yellow-700 after:content-['|'] after:ml-1">Resume</a>
+            <a href="#" class="text-gray-600 hover:text-yellow-700 after:content-['|'] after:ml-1">Projects</a>
+            <a href="#" class="text-gray-600 hover:text-yellow-700">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="flex flex-col lg:flex-row mx-auto justify-between items-center mt-5  space-y-10 lg:space-y-0 lg:space-x-10 ">
+        <div class="mx-auto">
+          <div class="flex flex-col lg:flex-row items-center justify-center">
+            <div class="w-80 h-80 relative rounded-full overflow-hidden">
+              <img src="../img/yupa-htoon.jpg" alt="Yupa Htoon"
+                class="max-w-[480px] max-h-[480px] rounded-full object-cover" />
+            </div>
+            <div class="flex flex-col justify-center items-start pl-10">
+              <p class="max-w-md text-gray-700 text-lg text-left mt-10">
+                I am a highly skilled IT professional with over a decade of experience in analyzing, designing, and
+                implementing efficient IT systems. I’ve proficiency in
+                various programing languages,databases, tools and AWS cloud technology. Learning never stops for me and
+                I’m always ready to learn emerging technologies.
+              </p>
+              <div
+                class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 mt-4 items-center justify-center w-full">
+                <a href="#resume"
+                  class="w-32 h-32 bg-yellow-600 hover:bg-yellow-700 text-white rounded-full flex items-center justify-center border border-black text-center">
+                  Resume
+                </a>
+                <button
+                  class="w-32 h-32 bg-[#16507a] hover:bg-[#08417B] text-white rounded-full flex items-center justify-center border-1 border-black">
+                  Projects
+                </button>
+                <button
+                  class="w-32 h-32 bg-gray-600 hover:bg-gray-700 text-white rounded-full flex items-center justify-center border-1 border-black">
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="min-h-screen pt-10 mt-10 bg-white">
+      <div class="flex flex-col md:flex-row justify-center items-start px-4 pb-32 space-y-8 md:space-y-0 md:space-x-2">
+        <!-- Image Section -->
+        <div class="w-full md:w-1/3 flex justify-center items-center">
+          <img src="../img/yupa-resume.jpg" alt="Resume"
+            class="w-full max-w-md md:max-w-lg max-h-[80vh] object-contain rounded" />
+        </div>
+
+        <!-- Side Section -->
+        <div class="w-full md:w-1/2  h-full rounded p-4 ">
+          <div class="flex flex-row items-center mb-4 space-x-1">
+            <button id="aboutBtn" class="bg-[#16507a] hover:bg-yellow-700 text-white rounded-md px-4 py-2 w-28 ">
+              About Me
+            </button>
+            <button id="skillsBtn" class="bg-[#16507a] hover:bg-yellow-700 text-white rounded-md px-4 py-2 w-28">
+              Skills
+            </button>
+            <button id="experienceBtn" class="bg-[#16507a] hover:bg-yellow-700 text-white rounded-md px-4 py-2 w-28">
+              Experience
+            </button>
+          </div>
+          <div id="sideContent">
+            <h2 class="text-2xl font-bold mb-2">My Story</h2>
+            <p class="text-gray-700 mb-2 indent-8">
+              I graduated from Singapore Management University with a Bachelor of Science in Information Systems
+              Management. Over the past 11 years, I’ve worked in tech sectors across Myanmar, Singapore, and Australia,
+              building strong technical and soft skills. I’ve developed and maintained numerous projects that added real
+              value to businesses. My strengths lie in improving system performance, designing scalable solutions, and
+              collaborating with cross-functional teams to meet business needs through seamless system integration.
+            </p>
+            <p class="text-gray-700 mb-2 indent-8">
+              I have deep domain knowledge in the Singapore telecommunications sector from nearly six years of
+              experience with working in local telcos, and I’ve also gained valuable insights into the Australian
+              disability services sector through my recent work.
+            </p>
+            <p class="text-gray-700 mb-2 indent-8">
+              With years of hands-on experience and deep domain knowledge in multiple sectors, I’m passionate about
+              using technology to solve real-world problems—bringing value to both users and businesses through
+              thoughtful, scalable solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+
+    </section>
+  </main>
+  <a href="#index"
+    class="fixed bottom-32 sm:bottom-32 md:bottom-32 lg:bottom-32 right-6 bg-[#08417B] hover:bg-[#06375b] text-white p-3 rounded-full shadow-xl z-60 transition-all duration-300 flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </a>
+
+  <footer class="fixed bottom-0 left-0 w-full bg-gray-800 text-gray-300 py-6 z-40">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm">&copy; 2025 Yupa Htoon. All rights reserved.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-yellow-700 transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+<script src="../scripts/scripts.js" defer></script>
